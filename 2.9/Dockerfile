@@ -27,8 +27,8 @@ RUN set -xe; \
 	apt-get install -y --no-install-recommends $runtimeDeps $buildDeps $riakDeps
 
 # Build OpenSSL 1.0.2 
-RUN wget https://www.openssl.org/source/openssl-1.0.2s.tar.gz; tar -xf openssl-1.0.2s.tar.gz; \
-	cd openssl-1.0.2s; ./config shared no-krb5 -fPIC; \
+RUN wget https://www.openssl.org/source/openssl-1.0.2t.tar.gz; tar -xf openssl-1.0.2t.tar.gz; \
+	cd openssl-1.0.2t; ./config shared no-krb5 -fPIC; \
 	make depend; \
 	make; \
 	make install
