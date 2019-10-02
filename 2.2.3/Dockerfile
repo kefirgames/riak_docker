@@ -7,7 +7,7 @@ ENV RIAK_VERSION 2.2.3
 ENV RIAK_HOME /usr/lib/riak
 ENV RIAK_FLAVOR KV
 
-RUN apt-get update; apt-get install -y curl
+RUN apt-get update; apt-get upgrade -y; apt-get install -y curl
 
 RUN curl -s https://packagecloud.io/install/repositories/basho/riak/script.deb.sh | bash
 RUN apt-get -y install riak
