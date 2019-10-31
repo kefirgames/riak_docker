@@ -7,13 +7,17 @@ Now it's possible to change almost everything in riak.conf with environment vari
 
 **Riak KV 2.2.3**
 
+*Current tags:* [`stable`](https://github.com/kefirgames/riak_docker/blob/master/2.2.3/Dockerfile), [`2.2.3`](https://github.com/kefirgames/riak_docker/blob/master/2.2.3/Dockerfile)
+
 Based on `ubuntu:16.04`. Installed from [official packages](https://packagecloud.io/basho/riak).
 
 Current stable version production ready.
 
 **Riak KV 2.9.0p3**
 
-Based on `debian:buster-slim` compiled with OpenSSL 1.0.2s (28-May-2019) and Basho's Erlang OTP 16
+*Current tags:* [`latest`](https://github.com/kefirgames/riak_docker/blob/master/2.9/Dockerfile), [`2.9`](https://github.com/kefirgames/riak_docker/blob/master/2.9/Dockerfile)
+
+Based on `debian:buster-slim` compiled with OpenSSL 1.0.2t (10-Sep-2019) and Basho's Erlang OTP 16
 
 First post-basho version. *Use at your own risk.* [Release notes](https://github.com/basho/riak/blob/develop-2.9/RELEASE-NOTES.md#riak-kv-290-release-notes---patch-3).
 
