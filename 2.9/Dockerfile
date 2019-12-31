@@ -6,7 +6,7 @@ ENV GIT_BRANCH_OTP basho-otp-16
 ENV APT_RUNTIME_DEPS "git libodbc1 wget"
 ENV APT_BUILD_DEPS "autoconf curl ca-certificates dpkg-dev gcc libncurses-dev make unixodbc-dev"
 ENV APT_RIAK_DEPS "build-essential libc6-dev libpam0g-dev"
-ENV OPENSSL_VERSION 1.0.2t
+ENV OPENSSL_VERSION 1.0.2u
 
 # Install dependencies
 RUN apt-get update
