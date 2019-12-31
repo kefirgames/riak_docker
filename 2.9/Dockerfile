@@ -76,6 +76,8 @@ COPY --from=builder $RIAK_SRC_PATH/rel/riak/bin/riak* /usr/sbin/
 COPY --from=builder $RIAK_SRC_PATH/rel/riak/erts-5.10.3 /usr/lib/riak/erts-5.10.3
 COPY --from=builder $RIAK_SRC_PATH/rel/riak/lib /usr/lib/riak/lib
 COPY --from=builder $RIAK_SRC_PATH/rel/riak/releases /usr/lib/riak/releases
+COPY --from=builder /usr/local/ssl /usr/local/ssl
+
 
 WORKDIR /var/lib/riak
 
