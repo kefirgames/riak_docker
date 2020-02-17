@@ -1,7 +1,7 @@
 FROM debian:buster-slim AS builder
 
 # Builder environment
-ENV GIT_BRANCH_RIAK riak-2.9.0p5
+ENV GIT_BRANCH_RIAK riak-2.9.1
 ENV GIT_BRANCH_OTP basho-otp-16
 ENV APT_RUNTIME_DEPS "git libodbc1 wget"
 ENV APT_BUILD_DEPS "autoconf curl ca-certificates dpkg-dev gcc libncurses-dev make unixodbc-dev"
