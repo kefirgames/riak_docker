@@ -44,8 +44,8 @@ RUN cd $GIT_BRANCH_RIAK; git checkout -q $GIT_BRANCH_RIAK; make rel
 FROM debian:buster-slim
 
 ENV RIAK_HOME /usr/lib/riak
-ENV RIAK_VERSION 2.9.0
-ENV RIAK_SRC_PATH /riak-2.9.0p5
+ENV RIAK_VERSION riak-2.9.1
+ENV RIAK_SRC_PATH /riak-2.9.1
 
 # Expose default ports
 EXPOSE 8087
