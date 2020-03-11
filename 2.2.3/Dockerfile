@@ -24,7 +24,7 @@ VOLUME /var/lib/riak
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 COPY docker-riak.conf.sh /etc/riak/prestart.d/riak.conf.sh
 COPY docker-advanced.config.sh /etc/riak/prestart.d/advanced.config.sh
-# COPY riak-env.sh /usr/lib/env.sh
+COPY riak-env.sh /usr/lib/riak/lib/env.sh
 
 # Prepare for bootstrapping schemas
 RUN mkdir -p /etc/riak/schemas
