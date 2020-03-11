@@ -68,6 +68,7 @@ RUN apt-get update; \
 # Copy riak startup script and configuration files
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 COPY docker-riak.conf.sh /etc/riak/prestart.d/riak.conf.sh
+COPY docker-riak-limits.conf.sh /etc/riak/prestart.d/riak.limits.conf.sh
 COPY docker-advanced.config.sh /etc/riak/prestart.d/advanced.config.sh
 COPY riak-env.sh /usr/lib/env.sh
 
