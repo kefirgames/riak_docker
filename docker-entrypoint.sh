@@ -4,6 +4,7 @@ set -e
 
 # Default riak config files
 declare -x RIAK_CONF=/etc/riak/riak.conf
+declare -x RIAK_LIMITS_CONF=/etc/security/limits.d/riak.conf
 declare -x RIAK_ADVANCED_CONF=/etc/riak/advanced.config
 
 if [ -z $RIAK_SET_ULIMIT ]; then
