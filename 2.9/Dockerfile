@@ -1,7 +1,7 @@
 FROM debian:buster-slim AS builder
 
 # Builder environment
-ENV GIT_BRANCH_RIAK riak-2.9.1
+ENV GIT_BRANCH_RIAK riak-2.9.2
 ENV GIT_BRANCH_OTP basho-otp-16
 ENV APT_RUNTIME_DEPS "git libodbc1 wget"
 ENV APT_BUILD_DEPS "autoconf curl ca-certificates dpkg-dev gcc libncurses-dev make unixodbc-dev"
@@ -13,7 +13,7 @@ RUN apt-get update
 RUN apt-get install -y --no-install-recommends $APT_RUNTIME_DEPS $APT_BUILD_DEPS $APT_RIAK_DEPS
 
 # Build OpenSSL
-RUN wget https://www.openssl.org/source/openssl-${OPENSSL_VERSION}.tar.gz; tar -xf openssl-${OPENSSL_VERSION}.tar.gz;
+RUN wget https://www.openssl.org/source/old/openssl-${OPENSSL_VERSION}.tar.gz; tar -xf openssl-${OPENSSL_VERSION}.tar.gz;
 RUN cd openssl-${OPENSSL_VERSION}; \
 	./config shared no-krb5 -fPIC; \
 	make depend; \
@@ -44,8 +44,8 @@ RUN cd $GIT_BRANCH_RIAK; git checkout -q $GIT_BRANCH_RIAK; make rel
 FROM debian:buster-slim
 
 ENV RIAK_HOME /usr/lib/riak
-ENV RIAK_VERSION riak-2.9.1
-ENV RIAK_SRC_PATH /riak-2.9.1
+ENV RIAK_VERSION riak-2.9.2
+ENV RIAK_SRC_PATH /riak-2.9.2
 
 # Expose default ports
 EXPOSE 8087

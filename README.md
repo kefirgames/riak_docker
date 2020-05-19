@@ -13,9 +13,9 @@ Based on `ubuntu:16.04`. Installed from [official packages](https://packagecloud
 
 Current stable version production ready.
 
-**Riak KV 2.9.1**
+**Riak KV 2.9.2**
 
-*Current tags:* [`latest`](https://github.com/kefirgames/riak_docker/blob/master/2.9/Dockerfile), [`2.9`](https://github.com/kefirgames/riak_docker/blob/master/2.9/Dockerfile), [`2.9.1`](https://github.com/kefirgames/riak_docker/blob/master/2.9/Dockerfile)
+*Current tags:* [`latest`](https://github.com/kefirgames/riak_docker/blob/master/2.9/Dockerfile), [`2.9`](https://github.com/kefirgames/riak_docker/blob/master/2.9/Dockerfile), [`2.9.2`](https://github.com/kefirgames/riak_docker/blob/master/2.9/Dockerfile)
 
 Based on `debian:buster-slim` compiled with OpenSSL 1.0.2u (20-Dec-2019) and Basho's Erlang OTP 16
 
