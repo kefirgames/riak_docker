@@ -68,7 +68,7 @@ fi
 
 # Clean up the ring files | Useful when the ip address changed
 if [ "$RIAK_RING_CLEANUP" == 'True' ]; then
-    rm $RIAK_DATA_DIR/ring/*
+    rm -f $RIAK_DATA_DIR/ring/*
 fi
 
 # Start the node and wait until fully up
