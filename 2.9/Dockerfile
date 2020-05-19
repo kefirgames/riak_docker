@@ -13,7 +13,7 @@ RUN apt-get update
 RUN apt-get install -y --no-install-recommends $APT_RUNTIME_DEPS $APT_BUILD_DEPS $APT_RIAK_DEPS
 
 # Build OpenSSL
-RUN wget https://www.openssl.org/source/openssl-${OPENSSL_VERSION}.tar.gz; tar -xf openssl-${OPENSSL_VERSION}.tar.gz;
+RUN wget https://www.openssl.org/source/old/openssl-${OPENSSL_VERSION}.tar.gz; tar -xf openssl-${OPENSSL_VERSION}.tar.gz;
 RUN cd openssl-${OPENSSL_VERSION}; \
 	./config shared no-krb5 -fPIC; \
 	make depend; \
