@@ -21,6 +21,11 @@ if [ -z $HOST ]; then
     declare -x HOST=`hostname -i`
 fi
 
+# Get default hostname for Riak ring
+if [ -z $RIAK_HOST ]; then
+    declare -x RIAK_HOST=$HOST
+fi
+
 # Default riak binary
 if [[ -x /usr/sbin/riak ]]; then
   declare -x RIAK=/usr/sbin/riak
