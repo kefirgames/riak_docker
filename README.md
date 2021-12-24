@@ -92,7 +92,9 @@ services:
         retries: 10
 ```
 ### Additional default variables
-HOST=`hostname -i` - the default ipv4 address riak will serve on.
+`HOST`=`hostname -i` - the default ipv4 address riak will serve on.
+
+`RIAK_HOST`=`$HOST` - hostname which will identify node hostname in Riak cluster.
 
 `RIAK_SET_ULIMIT=262144` - a kind of workaround to set ulimit before riak starts (because `docker --ulimit nofile=90000:90000` don't works here).
 
