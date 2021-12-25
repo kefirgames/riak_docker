@@ -7,9 +7,9 @@ Now it's possible to change almost everything in riak.conf with environment vari
 
 **Riak KV 2.2.3**
 
-*Current tags:* [`stable`](https://github.com/kefirgames/riak_docker/blob/master/2.2.3/Dockerfile), [`2.2.3`](https://github.com/kefirgames/riak_docker/blob/master/2.2.3/Dockerfile)
+*Current tags:* [`stable`](https://github.com/kefirgames/riak_docker/blob/master/2.2.3/Dockerfile), [`2.2.3`](https://github.com/kefirgames/riak_docker/blob/master/2.2.3/Dockerfile), [`stable-basho`](https://github.com/kefirgames/riak_docker/blob/basho/2.2.3/Dockerfile), [`2.2.3-basho`](https://github.com/kefirgames/riak_docker/blob/basho/2.2.3/Dockerfile)
 
-Based on `ubuntu:16.04`. Installed from [official packages](https://packagecloud.io/basho/riak).
+Based on `ubuntu:16.04`. Installed from [official packages](https://s3.amazonaws.com/downloads.basho.com), in `-basho` installed from now-defunct (after Basho bankruptcy) [packagecloud.io packages](https://packagecloud.io/basho/riak).
 
 Current stable version production ready.
 
