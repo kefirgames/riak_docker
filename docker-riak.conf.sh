@@ -16,7 +16,7 @@ EOF
 echo 'log.crash.rotation = $D0' >> $RIAK_CONF
 cat << EOF >> $RIAK_CONF
 
-nodename = ${RIAK_NODENAME:-riak}@${HOST:-127.0.0.1}
+nodename = ${RIAK_NODENAME:-riak}@${RIAK_HOST:-127.0.0.1}
 
 ring_size = ${RIAK_RING_SIZE}
 
